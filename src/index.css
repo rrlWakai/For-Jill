@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0) translateX(0);
+  }
+  to {
+    transform: translateY(-120vh) translateX(40px);
+  }
+}
+
+.brand-script {
+  font-family: "Dancing Script", cursive;
+}
