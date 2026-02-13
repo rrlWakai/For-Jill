@@ -14,7 +14,7 @@ export default function Final() {
         <p className="mt-3 text-white/80 max-w-2xl mx-auto">
           Whatever your answer is, thank you for being you. 💛
           <br />
-          (From: Rhen)
+          (From: Ren)
         </p>
       </motion.div>
     </section>

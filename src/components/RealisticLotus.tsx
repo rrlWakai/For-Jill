@@ -284,7 +284,7 @@ export default function RealisticLotus() {
             className="relative mt-10 w-full max-w-xl rounded-3xl border border-white/15 bg-white/10 backdrop-blur-md p-6 text-center shadow-lg"
           >
             <p className="text-xl sm:text-2xl font-semibold">
-              Will you be my partner this Heart’s Day? 💛
+              Will you be my partner this Heart’s Day?
             </p>
 
             {/* Before NO escapes: aligned row */}
@@ -296,14 +296,14 @@ export default function RealisticLotus() {
                   animate={{ scale: yesScale }}
                   transition={{ type: "spring", stiffness: 220, damping: 14 }}
                 >
-                  YES 💛
+                  YES
                 </motion.button>
 
                 <button
                   onClick={onNo}
                   className="rounded-2xl border border-white/20 bg-white/5 px-6 py-3 hover:bg-white/10 active:scale-[0.98] transition"
                 >
-                  NO 🙂
+                  NO
                 </button>
               </div>
             ) : (
@@ -315,7 +315,7 @@ export default function RealisticLotus() {
                   animate={{ scale: yesScale }}
                   transition={{ type: "spring", stiffness: 220, damping: 14 }}
                 >
-                  YES 💛
+                  YES
                 </motion.button>
               </div>
             )}
@@ -345,7 +345,7 @@ export default function RealisticLotus() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ type: "spring", stiffness: 260, damping: 18 }}
           >
-            NO 🙂
+            NO
           </motion.button>
         )}
       </AnimatePresence>
@@ -377,7 +377,7 @@ export default function RealisticLotus() {
       </AnimatePresence>
 
       <div className="mt-12 text-white/70 text-sm">
-        <p>— From: Rhen</p>
+        <p>— From: Ren</p>
       </div>
     </section>
   );

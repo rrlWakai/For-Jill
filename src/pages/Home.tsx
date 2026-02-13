@@ -9,15 +9,15 @@ export default function Home() {
         </p>
 
         <h1 className="brand-script text-5xl sm:text-6xl leading-tight mt-2">
-          My Nabi 🦋
+          My Nabi
         </h1>
 
         <p className="mt-5 text-white/80">
-          I made this Tangled-inspired little world… just for you.
+          I made this Tangled-inspired little world… just for you, nabii.
         </p>
 
         <p className="mt-3 text-white/65 text-sm">
-          (Tap the lotus when you’re ready ✨)
+          (Tap the lotus when you’re ready, nabii ✨)
         </p>
       </div>
 
