@@ -5,7 +5,6 @@ import LanternTransition from "../components/LanternTransition";
 import LoveLetterCard from "../components/LoveLetterCard";
 import GallerySlideshow from "../components/GallerySlideshow";
 
-// ✅ Replace these with your actual gallery imports
 import g1 from "../assets/gallery/1.jpg";
 import g2 from "../assets/gallery/2.jpg";
 import g3 from "../assets/gallery/3.jpg";
@@ -22,31 +21,26 @@ export default function LoveFlow() {
   const [step, setStep] = useState<Step>("lanternFly");
 
   useEffect(() => {
-    // Lantern flies in
     if (step === "lanternFly") {
       const t = window.setTimeout(() => setStep("lanternOpen"), 1200);
       return () => window.clearTimeout(t);
     }
 
-    // Lantern opens
     if (step === "lanternOpen") {
       const t = window.setTimeout(() => setStep("letterIn"), 900);
       return () => window.clearTimeout(t);
     }
 
-    // Letter fade in then hold
     if (step === "letterIn") {
       const t = window.setTimeout(() => setStep("letterHold"), 700);
       return () => window.clearTimeout(t);
     }
 
-    // Hold letter for 20 seconds
     if (step === "letterHold") {
       const t = window.setTimeout(() => setStep("letterOut"), 20000);
       return () => window.clearTimeout(t);
     }
 
-    // Fade out then show gallery
     if (step === "letterOut") {
       const t = window.setTimeout(() => setStep("gallery"), 900);
       return () => window.clearTimeout(t);
@@ -116,7 +110,12 @@ export default function LoveFlow() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
           >
-            <GallerySlideshow slides={slides} intervalMs={4500} />
+            <GallerySlideshow
+              slides={slides}
+              slideMs={5000}
+              endHoldMs={4200}
+              goodnightHoldMs={4200}
+            />
           </motion.div>
         )}
       </AnimatePresence>
